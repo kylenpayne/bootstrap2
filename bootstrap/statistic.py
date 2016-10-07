@@ -1,4 +1,4 @@
-"""This module implements an abstract statistic class for any resampled statistic
+"""This module implements a statistic class for any resampled statistic
 object to inherit. This is a useful implementation as the arguments, data,
 IO, and many other features should be standardized across the multiple types of
 objects. This will cut down on the overall boilerplate code that would need to
@@ -73,34 +73,3 @@ class Statistic():
             if len(list(set(data_types))) > 1:
                 ValueError("""Elements of a list of data must
                               be the same type""")
-    #
-    # @abstractmethod
-    # def apply(self):
-    #     """Applies the method to the data.
-    #     For bootstrapping, this would be an application of the bootstrap.
-    #     For jackknife, this would be an application of the jackknife.
-    #     """
-    #     pass
-    #
-    # @abstractmethod
-    # def sample(self):
-    #     """Abstract method for the bootstrap and the jackknife statistic.
-    #     """
-    #     pass
-    #
-    # @abstractmethod
-    # def summary(self):
-    #     """Produce a summary of the Statistic object"""
-    #     pass
-    #
-    # @abstractmethod
-    # def bias(self):
-    #     """Estimate of the bias of the estimator
-    #     """
-    #     pass
-    #
-    # @abstractmethod
-    # def se(self):
-    #     """Estimate of the standard error of the estimator.
-    #     """
-    #     pass
